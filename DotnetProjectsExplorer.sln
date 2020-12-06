@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DotnetProjectsExplorer", "src\DotnetProjectsExplorer\DotnetProjectsExplorer.fsproj", "{47B29DBE-C25A-4CA5-B597-647B6866A441}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DotnetProjectsExplorer.Services", "src\DotnetProjectsExplorer.Services\DotnetProjectsExplorer.Services.fsproj", "{81957685-4825-4F6E-88A0-EB1948C3542D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47B29DBE-C25A-4CA5-B597-647B6866A441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B29DBE-C25A-4CA5-B597-647B6866A441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B29DBE-C25A-4CA5-B597-647B6866A441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B29DBE-C25A-4CA5-B597-647B6866A441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81957685-4825-4F6E-88A0-EB1948C3542D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81957685-4825-4F6E-88A0-EB1948C3542D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81957685-4825-4F6E-88A0-EB1948C3542D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81957685-4825-4F6E-88A0-EB1948C3542D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA07B249-3AF7-47AD-BFBD-DA58255C6348}
+	EndGlobalSection
+EndGlobal

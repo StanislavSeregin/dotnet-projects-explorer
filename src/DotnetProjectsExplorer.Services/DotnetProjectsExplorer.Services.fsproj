@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Gitlab.fs" />
     <Compile Include="Excel.fs" />
     <Compile Include="Settings.fs" />
   </ItemGroup>

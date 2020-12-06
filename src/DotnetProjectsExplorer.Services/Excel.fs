@@ -10,12 +10,12 @@ let excelStream<'T> (titleWithFuncSeq: (string * ('T -> string)) seq)
     let book = HSSFWorkbook ()
     let sheet = book.CreateSheet sheetName
     let headerRow = sheet.CreateRow 0
-    let indexWithTitleAndFunc =
+    let indexesWithTitlesAndFuncs =
         titleWithFuncSeq
         |> Seq.mapi (fun i (title, func) -> (i, title, func))
         |> Array.ofSeq
 
-    indexWithTitleAndFunc
+    indexesWithTitlesAndFuncs
     |> Array.iter (fun (index, title, _) ->
         headerRow.CreateCell index
         |> fun cell -> cell.SetCellValue title)
@@ -24,7 +24,7 @@ let excelStream<'T> (titleWithFuncSeq: (string * ('T -> string)) seq)
     |> Seq.iteri (fun rowIndex item ->
         sheet.CreateRow (rowIndex + 1)
         |> fun row ->
-            indexWithTitleAndFunc
+            indexesWithTitlesAndFuncs
             |> Array.iter (fun (columnIndex, _, func) ->
                 row.CreateCell columnIndex
                 |> fun cell -> cell.SetCellValue (func item)))
